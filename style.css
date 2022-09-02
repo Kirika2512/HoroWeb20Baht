@@ -1,5 +1,5 @@
 body, html {
-    background-color: #B6E2D3;
+    background-color: #FFF9CA;
     padding: 0;
     margin: 0;
 }
@@ -22,3 +22,7 @@ body, html {
     margin: 1em;
 }
 
+.topics {
+    font-size: 20px;
+    text-align: center;
+}
