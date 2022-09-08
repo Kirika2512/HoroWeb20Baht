@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
+body, html {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav {
+    background-color: #fff;
+    height: 70px;
+    font-family: 'Lobster', cursive;
+    text-decoration-line: underline;
+    text-decoration-style: solid; 
+    font-weight: 180px;
+    letter-spacing: 3px;
+}
+.topic
+{
+   font-family: 'Anton', sans-serif;
+   text-transform: uppercase;
+   background-image: linear-gradient(
+    -225deg,
+    #FEC8A7 0%,
+    #FCECA5 25%,
+    #B5EECB 75%,
+    #CBC7FC 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+.Q {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.container_up {
+    width: 1200px;
+    height:250px;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+button {
+    font-family:'Titan One',cursive;
+    text-align: center;    
+    padding: 50px 70px;
+    font-size: 30px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    position: relative;
+    margin: 20px;
+    transition: all 0.25s ease;
+}
+
+.love_btn:hover, .work_btn:hover, .health_btn:hover, .day_btn:hover, .money_btn:hover, .contact_btn:hover {
+    transform: translate(-12px, -12px);
+}
+.love_btn:hover::after, .work_btn:hover::after, .health_btn:hover::after, .day_btn:hover::after, .money_btn:hover::after, .contact_btn:hover::after  {
+    transform: translate(24px, 24px);
+}
+.love_btn:hover::before, .work_btn:hover::before, .health_btn:hover::before, .day_btn:hover::before, .money_btn:hover::before, .contact_btn:hover::before {
+    transform: translate(12px,12px);
+}
+
+.love_btn {
+    background-color: #f2a7a0;
+    color: #000;
+    transition: all 0.25s ease;
+}
+.love_btn::after, .love_btn::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background-color: #FFB4B4;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+
+.work_btn {
+    background-color:#D9F8C4;
+    color: #000;
+    transition: all 0.25s ease;
+}
+.work_btn::after, .work_btn::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background-color: #D9F8C4;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+.money_btn {
+    background-color:#B2A4FF;
+    color: #000;
+    transition: all 0.25s ease;
+}
+.money_btn::after, .money_btn::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background-color: #B2A4FF;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+.health_btn {
+    background-color:#B2A4FF;
+    color: #000;
+    transition: all 0.25s ease;    
+}  
+.health_btn::after, .health_btn::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background-color: #B2A4FF;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+    
+
+.container_down {
+    width: 1200px;
+    height:250px;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.love_btn {
+    background-color: #f2a7a0;
+    color: #000;
+    transition: all 0.25s ease;
+}
+.love_btn::after, .love_btn::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background-color: #FFB4B4;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+.work_btn {
+    background-color:#D9F8C4;
+    color: #000;
+    transition: all 0.25s ease;
+}
+.work_btn::after, .work_btn::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background-color: #D9F8C4;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+.money_btn {
+    background-color:#B2A4FF;
+    color: #000;
+    transition: all 0.25s ease;
+}
+.money_btn::after, .money_btn::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background-color: #B2A4FF;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+.health_btn {
+    background-color:#B2A4FF;
+    color: #000;
+    transition: all 0.25s ease;    
+}  
+.health_btn::after, .health_btn::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background-color: #B2A4FF;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
