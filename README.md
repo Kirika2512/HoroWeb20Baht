@@ -3,3 +3,4 @@
  Member
  - LALAFALL
  - Kirika
+ - Chamel
