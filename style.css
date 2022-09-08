@@ -2,27 +2,84 @@ body, html {
     background-color: #FFF9CA;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.profile {
+nav {
+    background-color: #FFDEB4;
+    height: 70px;
+    font-family: 'Lobster', cursive;
+    text-decoration-line: underline;
+    text-decoration-style: solid; 
+    font-weight: 1800;
+    letter-spacing: 3px;
+}
+
+.topic {
+    text-align: center;
+    border: 3px red;
+    padding: 10px;
+}
+
+.Q {
     display: flex;
+    color: black;
     justify-content: center;
 }
 
-.profile_img {
-    margin: 3em;
+.container_up {
+    max-width: 960px;
+    height: 450px;
+    margin: 0 auto;
+    border: 1px solid red;
 }
 
-.profile_img img{
-    border-radius: 50%;
-}
-
-.profile_info_top {
+button {
+    padding: 20PX 50px;
     font-size: 20px;
-    margin: 1em;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    position: relative;
+    margin: 20px;
+    transition: all 0.25s ease;
 }
 
-.topics {
-    font-size: 20px;
-    text-align: center;
+.love_btn {
+    background-color: #FFB4B4;
+    color: #000;
+    border-radius: 30px;
+    transition: all 0.25s ease;
+}
+
+.love_btn:hover {
+    transform: translate(-12px, -12px);
+}
+
+.love_btn:hover::after {
+    transform: translate(6px, 6px);
+}
+
+.love_btn:hover::before {
+    transform: translate(12px,12px);
+}
+
+.love_btn::after, .love_btn::before {
+    color: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background-color: #09b397;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all  ease;
+}
+
+.container_down {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid red;
 }
