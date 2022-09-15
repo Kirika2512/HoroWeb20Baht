@@ -1,70 +1,85 @@
 @import url('https://fonts.googleapis.com/css?family=Titan+One');
 
-body, html {
-    background-color: #fff;
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+body {
+    background-color: rgb(248, 240, 231);
 }
 
+.container {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    opacity: 80%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(110, 97, 84);
+}
 
-nav {
-    background-color: #fff;
-    height: 70px;
-    font-family: 'Lobster', cursive;
-    text-decoration-line: underline;
-    text-decoration-style: solid; 
-    font-weight: 180px;
-    letter-spacing: 3px;
+nav ul{
+    display: flex;
 }
-.topic
-{
-   font-family: 'Anton', sans-serif;
-   text-transform: uppercase;
-   background-image: linear-gradient(
-    -225deg,
-    #FEC8A7 0%,
-    #FCECA5 25%,
-    #B5EECB 75%,
-    #CBC7FC 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-  font-size: 50px;
+
+nav ul li{
+    color: white;
+    margin-right: 15px;
 }
+
+#homepage {
+    box-sizing: content-box;
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #faab79 0%,
+            #fce376 25%,
+            #73eda2 75%,
+            #8d83fd 100%);
+    background-size: auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 900;
+}
+
 @keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+    to {
+        background-position: 200% center;
+    }
 }
 
+* a{
+    text-decoration: none;
+    color: black;
+}
+
+* li{
+    list-style: none;
+}
 
 .Q {
     padding: 20px;
     text-align: center;
 }
 
-
 .container_up {
     width: 1200px;
-    height:250px;
+    height: 250px;
     margin: 0 auto;
-    border: 1px solid red;
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-button {
-    font-family:'Titan One',cursive;
-    text-align: center;    
+.btn {
+    font-family: 'Titan One', cursive;
+    text-align: center;
     padding: 50px 70px;
     font-size: 30px;
     cursor: pointer;
@@ -76,178 +91,91 @@ button {
     transition: all 0.25s ease;
 }
 
-.love_btn:hover, .work_btn:hover, .health_btn:hover, .day_btn:hover, .money_btn:hover, .contact_btn:hover {
+.btn:hover {
     transform: translate(-12px, -12px);
 }
-.love_btn:hover::after, .work_btn:hover::after, .health_btn:hover::after, .day_btn:hover::after, .money_btn:hover::after, .contact_btn:hover::after  {
+
+.btn:hover::after {
     transform: translate(24px, 24px);
 }
-.love_btn:hover::before, .work_btn:hover::before, .health_btn:hover::before, .day_btn:hover::before, .money_btn:hover::before, .contact_btn:hover::before {
-    transform: translate(12px,12px);
+
+.btn:hover::before {
+    transform: translate(12px, 12px);
 }
 
-.love_btn {
-    background-color: #f2a7a0;
+.btn {
     color: #000;
     transition: all 0.25s ease;
 }
-.love_btn::after, .love_btn::before {
+
+.btn::after, .btn::before {
     content: "";
     position: absolute;
     opacity: 0.3;
     border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+#love_btn {
     background-color: #FFB4B4;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 0.25s ease;
 }
 
-
-.work_btn {
-    background-color:#D9F8C4;
-    color: #000;
-    transition: all 0.25s ease;
-}
-.work_btn::after, .work_btn::before {
-    content: "";
-    position: absolute;
-    opacity: 0.3;
-    border-radius: inherit;
-    background-color: #D9F8C4;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 0.25s ease;
+#love_btn::after,#love_btn::before {
+    background-color: #FFB4B4;
 }
 
-.money_btn {
-    background-color:#B2A4FF;
-    color: #000;
-    transition: all 0.25s ease;
+#work_btn {
+    background-color: #93E9BE;
 }
-.money_btn::after, .money_btn::before {
-    content: "";
-    position: absolute;
-    opacity: 0.3;
-    border-radius: inherit;
+
+#work_btn::after,#work_btn::before {
+    background-color: #93E9BE;
+}
+
+#money_btn {
     background-color: #B2A4FF;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 0.25s ease;
 }
 
-.health_btn {
-    background-color:#B2A4FF;
-    color: #000;
-    transition: all 0.25s ease;    
-}  
-.health_btn::after, .health_btn::before {
-    content: "";
-    position: absolute;
-    opacity: 0.3;
-    border-radius: inherit;
+#money_btn::after, #money_btn::before {
     background-color: #B2A4FF;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 0.25s ease;
 }
-    
+
+#health_btn {
+    background-color: #A4E8E0;
+}
+
+#health_btn::after, #health_btn::before {
+    background-color: #A4E8E0;
+}
+
+#day_btn {
+    background-color: #fddd7e;
+}
+
+#day_btn::after, #day_btn::before {
+    background-color: #fddd7e;
+}
+
+#contact_btn {
+    background-color: #fd7e7e;
+}
+
+#contact_btn::after, #contact_btn::before {
+    background-color: #fd7e7e;
+}
+
 
 .container_down {
     width: 1200px;
-    height:250px;
+    height: 250px;
     margin: 0 auto;
-    border: 1px solid red;
     display: flex;
     align-content: center;
     justify-content: center;
     text-align: center;
-}
-
-
-.love_btn {
-    background-color: #f2a7a0;
-    color: #000;
-    transition: all 0.25s ease;
-}
-.love_btn::after, .love_btn::before {
-    content: "";
-    position: absolute;
-    opacity: 0.3;
-    border-radius: inherit;
-    background-color: #FFB4B4;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 0.25s ease;
-}
-
-.work_btn {
-    background-color:#D9F8C4;
-    color: #000;
-    transition: all 0.25s ease;
-}
-.work_btn::after, .work_btn::before {
-    content: "";
-    position: absolute;
-    opacity: 0.3;
-    border-radius: inherit;
-    background-color: #D9F8C4;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 0.25s ease;
-}
-
-.money_btn {
-    background-color:#B2A4FF;
-    color: #000;
-    transition: all 0.25s ease;
-}
-.money_btn::after, .money_btn::before {
-    content: "";
-    position: absolute;
-    opacity: 0.3;
-    border-radius: inherit;
-    background-color: #B2A4FF;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 0.25s ease;
-}
-
-.health_btn {
-    background-color:#B2A4FF;
-    color: #000;
-    transition: all 0.25s ease;    
-}  
-.health_btn::after, .health_btn::before {
-    content: "";
-    position: absolute;
-    opacity: 0.3;
-    border-radius: inherit;
-    background-color: #B2A4FF;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 0.25s ease;
 }

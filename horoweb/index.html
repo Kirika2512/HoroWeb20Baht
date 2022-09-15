@@ -10,42 +10,42 @@
         <link rel="shortcut icon" type="image/x-icon" href="stars.png">
     </head>
     <body>
-        <nav>
-            <div>
-                <h1 class="topic">Horoscope</h1>
-            </div>
-        </nav>
-
-        <header>
-            <div class="Q">
-                <h1>อยากดูดวงเกี่ยวกับอะไรดีคะ?</h1>
+        <header id="homeheader">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <h1 id="homepage">Horoscope ★</h1>
+                    </div>
+                    <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="love.html">Love</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="money.html">Money</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="day.html">Daily_Card</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    </nav>
+                </div>
             </div>
         </header>
-
+        <header>
+            <div class="Q">
+                <h1>What do you want to know?</h1>
+            </div>
+        </header>
         <section>
             <div class="container_up">
-                <button class = love_btn>
-                <span> About </span><br>
-                <span>Love</span>
-                </button>
-                <button class = work_btn>
-                <span> About </span><br>
-                <span>Work</span>
-                </button>
-                <button class = money_btn>
-                <span> About </span><br>
-                <span>Money</span>
-                </button>
+                <a href="love.html" target="_blank" class="btn" id="love_btn">Love</a>
+                <a href="work.html" target="_blank" class="btn" id="work_btn">Work</a>
+                <a href="money.html" target="_blank" class="btn" id="money_btn">money</a>
             </div>
             <div class="container_down">
-                <button class = health_btn>
-                <span> About </span><br>
-                <span>Health</span>
-                </button>
-                <button class = day_btn>day</button>
-                <button class = contact_btn>contact</button>
+                <a href="health.html" target="_blank" class="btn" id="health_btn">health</a>
+                <a href="Daily.html" target="_blank" class="btn" id="day_btn">Daily</a>
+                <a href="contact.html" target="_blank" class="btn" id="contact_btn">contact</a>
             </div>
         </section>
-
     </body>
 </html>

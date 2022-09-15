@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+h1 {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    box-sizing: content-box;
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #faab79 0%,
+            #fce376 25%,
+            #73eda2 75%,
+            #8d83fd 100%);
+    background-size: auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+* a{
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+}
+
+* li{
+    list-style: none;
+    font-family: 'Anton', sans-serif;
+    color: solid rgb(255, 255, 255);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    opacity: 80%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 15px;
+}
+
+.grid {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px auto 200px;
+    grid-template-areas:
+    "header header"
+    "leftbar main"
+    "footer footer"
+    ;
+}
+
+.top {
+    grid-area: header;
+}
+
+.card {
+    grid-area: leftbar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.top, .card, .main {
+    display: flex;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.top {
+    position: relative;
+}
+
+.article {
+    font-size: 50px;
+    letter-spacing: .3em;
+    transform: skewX(1deg);
+}
+
+.article::after {
+    content: "Love_Telling";
+    position: absolute;
+    left: 8px;
+    top: 9px;
+    z-index: -1;
+    transform: rotateX(-60deg) skewX(-20deg);
+}
+
+.footer {
+    background-color: white;
+}
+
+#loveheader {
+    background-color: #e89292;
+}
+
+#lovetop {
+    background-color: #fea4b0;
+}
+
+#lovearticle {
+    color: #ffd6d6;
+}
+
+#lovearticle::after {
+    color: #f987a0;
+}
+
+#lovecard {
+    background-color: #fdbfbe;
+    height: 500px;
+}
+
+#lovemain {
+    background-color: #ffd7d7;
+}
+
+
+#workheader {
+    background-color: #3d9776;
+}
+
+#worktop {
+    background-color: #79a97d ;
+}
+
+#workarticle {
+    color: #b3ddd1;
+}
+
+#workarticle::after {
+    content: "Work_Telling";
+    color: #439039;  
+}
+
+#workcard {
+    background-color: #a9bb8f;
+}
+
+#workmain {
+    background-color: #f1e2ca;
+    height: 500px;
+}
+
+
+#moneyheader {
+    background-color: #9967ce;
+}
+
+#moneytop {
+    background-color: #ba9cf6;
+}
+
+#moneyarticle {
+    color: #efe8f1;
+}
+
+#moneyarticle::after {
+    content: "Money_Telling";
+    color: #996af7;
+}
+
+#moneycard {
+    background-color: #cfb7ff;
+}
+
+#moneymain {
+    background-color: #e3defe;
+    height: 500px;
+}
+
+
+#healthheader {
+    background-color: #8aafff;
+}
+
+#healthtop {
+    background-color: #a5c1fd;
+}
+
+#healtharticle {
+    color: #d1eaf5;
+}
+
+#healtharticle::after {
+    content: "Health_Telling";
+    color: #768cce;
+}
+
+#healthcard {
+    background-color: #b8cdfb;
+}
+
+#healthmain {
+    background-color: #d3e1ff;
+    height: 500px;
+}
+
+#dayheader {
+    background-color: #e68472;
+}
+
+#daytop {
+    background-color: #f9ab89;
+}
+
+#dayarticle {
+    color: #c2683b;
+}
+
+#dayarticle::after {
+    content: "Daily_Card";
+    color: #d78f5f;
+}
+
+#daycard {
+    background-color: #ffceae;
+}
+
+#daymain {
+    background-color: #ffefd7;
+    height: 500px;
+}
