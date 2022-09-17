@@ -1,10 +1,11 @@
 <html>
     <head>
-        <title>Day Telling</title>
-        <link rel="shortcut icon" type="image/x-icon" href="heart.png">
+        <title>Your Personal Card</title>
+        <link rel="shortcut icon" type="image/x-icon" href="icon/user.png">
         <link rel="stylesheet" type="text/css" href="horo.css">
     </head>
     <body>
+        <script src="function.js"></script>
         <header id="dayheader">
             <div class="container">
                 <div class="navbar">
@@ -18,8 +19,7 @@
                         <li><a href="work.html">Work</a></li>
                         <li><a href="money.html">Money</a></li>
                         <li><a href="health.html">Health</a></li>
-                        <li><a href="day.html">Daily_Card</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="personal.html">Personal Card</a></li>
                     </ul>
                     </nav>
                 </div>
@@ -28,16 +28,23 @@
         <div class="content">
             <div class="grid">
                 <header class="top" id="daytop">
-                    <h3 class="article" id="dayarticle">Daily_Card</h3>
+                    <h3 class="article" id="dayarticle">Personal_Card</h3>
                 </header>
                 <div class="card" id="daycard">
-                    <h3>card</h3>
+                    <img id="image">
                 </div>
                 <div class="main" id="daymain">
-                    <h3>main</h3>
+                    <input type="date" id="BirthDay" value="2020-01-24">
+                    <button class="btn" id="submit" onclick="personalcard(), displaycard()">Submit</button>
+                    <br> <br>
+                    <h3 id="yourbirthday">Select Your Brithday to get your personal card</h3>
+                    <h3 id="Character"></h3>
+                    <h3 id="Career"></h3>
+                    <h3 id="Place"></h3>
+                    <h3 id="Tips"></h3>
                 </div>
-                <footer class="footer">
-                    <h3>footer</h3>
+                <footer class="footer" id="daymain">
+                    <h3></h3>
                 </footer>
             </div>
         </div>

@@ -1,10 +1,11 @@
 <html>
     <head>
         <title>Health Telling</title>
-        <link rel="shortcut icon" type="image/x-icon" href="heart.png">
+        <link rel="shortcut icon" type="image/x-icon" href="icon/heartbeat.png">
         <link rel="stylesheet" type="text/css" href="horo.css">
     </head>
-    <body>
+    <body onload="topiccard('Health'), displaycard()">
+        <script src="function.js"></script>
         <header id="healthheader">
             <div class="container">
                 <div class="navbar">
@@ -18,8 +19,7 @@
                         <li><a href="work.html">Work</a></li>
                         <li><a href="money.html">Money</a></li>
                         <li><a href="health.html">Health</a></li>
-                        <li><a href="day.html">Daily_Card</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="personal.html">Personal Card</a></li>
                     </ul>
                     </nav>
                 </div>
@@ -31,13 +31,13 @@
                     <h3 class="article" id="healtharticle">Health_Telling</h3>
                 </header>
                 <div class="card" id="healthcard">
-                    <h3>card</h3>
+                    <img id="image">
                 </div>
                 <div class="main" id="healthmain">
-                    <h3>main</h3>
+                    <h3 id="result"></h3>
+                    <h4 id="Tips"></h4>
                 </div>
-                <footer class="footer">
-                    <h3>footer</h3>
+                <footer class="footer" id="healthmain">
                 </footer>
             </div>
         </div>
